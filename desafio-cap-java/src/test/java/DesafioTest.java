@@ -7,7 +7,7 @@ public class DesafioTest {
 
     @Test
     public void devePrintarNEstrelas(){
-        desafio.questaoUm(8);
+        desafio.questaoUm();
     }
 
     @Test
