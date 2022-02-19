@@ -5,7 +5,7 @@ public class Program {
 
 
        Desafio resolucao = new Desafio();
-       resolucao.questaoUm(6);
+       resolucao.questaoUm();
        resolucao.questaoDois("zaqwer1");
        resolucao.questaoDois("zXc#8n9");
        resolucao.questaoTres("Banana");
