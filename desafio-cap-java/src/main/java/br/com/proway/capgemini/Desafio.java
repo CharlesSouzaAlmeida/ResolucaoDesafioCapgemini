@@ -1,22 +1,37 @@
 package br.com.proway.capgemini;
 
+
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Desafio {
-    public void questaoUm(int n) {
+    public void questaoUm() {
 
-        StringBuilder character = new StringBuilder();
+// Scanner -> Para fazer a leitura dos números digitados pelo usuário
 
+        Scanner input = new Scanner(System.in);
+        List<String> degraus = new ArrayList<>();
 
+        // Local onde o usuário irá digitar o valor desejado
 
-        for (int i = 0; i < n; i++) {
-            character.append("*");
-            if (i == 0)
-                System.out.print(character);
-            else
-                System.out.print("\n" + character);
+        System.out.printf("Insira um número: ");
+        int qtdDegraus = input.nextInt();
+
+        // Contagem crescente após o usuário digitar um numero.
+
+        for (int i = 0; i < qtdDegraus; i++) {
+            degraus.add(" ".repeat(qtdDegraus - i) + "*".repeat(i + 1));
+
         }
+
+        for (String d : degraus ) {
+            System.out.println(d);
+
+        }
+
+
+
     }
 
     public void questaoDois(String senha) {
